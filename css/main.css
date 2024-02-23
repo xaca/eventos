@@ -13,9 +13,12 @@
         color: #f77311;
       }
       .mensaje_importante{
-        font-weight: 500;
-        color:#582296;
-        text-decoration: underline;
+        font-weight: 400;
+        font-size: 16px;
+        color:#8f5bcb;
+      }
+      section{
+        margin-bottom: 60px;
       }
       li {
         list-style-type: none;
@@ -68,6 +71,48 @@
         background: #fffb7d;
         color: #582296;
       }
+      #speakers section{
+        display: flex;
+        justify-content: space-around;
+      }
+      .tarjeta_speaker{
+        width: 200px;
+        border: .5px solid #8f5bcb;
+        border-radius: 10px;
+        padding: 20px;
+      }
+      .nombre_tarjeta{
+        font-weight: 600;
+        font-size: 14px;
+        color: #f77311;
+      }
+      .fecha{
+        color: #582296;
+        font-weight: 600;
+      }
+      .descripcion{
+        text-align: left;
+        font-size: 14px;
+        letter-spacing: -.5px;
+      }
+      .avatar{
+        border:1px solid #f77311;
+        border-radius: 200px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 200px;
+        height: 200px;
+        margin-bottom: 20px;
+      }
+      .speaker_1{
+        background-image: url(../img/01_speaker.jpg);
+      }
+      .speaker_2{
+        background-image: url(../img/02_speaker.jpg);
+      }
+      .speaker_3{
+        background-image: url(../img/03_speaker.jpg);
+      }
       @media screen and (max-width: 720px) {
         li {
           height: auto;
@@ -80,5 +125,13 @@
         .speaker {
           font-weight: 500;
           display: block;
+        }
+        #speakers section{
+          flex-direction: column;
+          margin: 0 auto;
+          width: 80%;
+        }
+        .tarjeta_speaker{
+          margin-bottom: 20px;
         }
       }
