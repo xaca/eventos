@@ -132,7 +132,18 @@
       .enlace_sponsor{
         margin-right: 10px;
       }
-      @media screen and (max-width: 720px) {
+      @media (min-width: 421px) and (max-width:810px) {
+        .tarjeta_speaker{
+          width: 160px;
+          margin-right: 10px;
+        }
+        .avatar{
+          width: 150px;
+          height: 150px;
+        }
+      }
+      /*Celular*/
+      @media (max-width: 420px)  {
         li {
           height: auto;
           padding: 2px 10px;
@@ -152,5 +163,17 @@
         }
         .tarjeta_speaker{
           margin-bottom: 20px;
+        }
+        .enlace_sponsor{
+          height: 20%;
+        }
+        #sponsors{
+          height: 110px;
+        }
+        #sponsors img{
+          width: 100px;
+        }
+        .tarjeta_speaker{
+          margin:10px auto;
         }
       }
