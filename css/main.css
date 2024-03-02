@@ -16,6 +16,7 @@ body {
 }
 ul {
   padding: 0;
+  margin: 0;
 }
 h1,h2 {
   font-weight: 900;
@@ -67,6 +68,7 @@ div > img {
 #btn_registro{
   display: block;
   text-decoration: none;
+  border-radius: 20px;
   color: var(--texto);
   background: var(--fondo);
   padding: 12px 60px;
@@ -164,6 +166,14 @@ blockquote h4{
 #texto_tema_evento{
   width: 70%;
   margin: 0 auto;
+}
+#agenda div{
+  border-radius: 20px;
+  text-align: left;
+  overflow: hidden;
+}
+#agenda ul li:first-child{
+  padding-top: 15px;
 }
 @media (min-width: 421px) and (max-width:810px) {
   .imagen_destacada{
