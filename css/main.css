@@ -114,6 +114,7 @@ div > img {
   background-repeat: no-repeat;
   width: 200px;
   height: 200px;
+  margin:0 auto;
   margin-bottom: 20px;
 }
 .speaker_1{
@@ -188,8 +189,10 @@ blockquote h4{
     height: 150px;
   }
 }
+
+
 /*Celular*/
-@media (max-width: 420px)  {
+@media (min-width: 360px) and (max-width: 420px){
 
   .imagen_destacada{
     width: 250px;
@@ -225,5 +228,31 @@ blockquote h4{
   }
   .tarjeta_speaker{
     margin:10px auto;
+  }
+}
+
+/*Iphone pro max*/
+@media (min-width: 427px) and (max-width: 428px)  {
+  #speakers section {
+    flex-direction: column;
+  }
+  .tarjeta_speaker{
+    text-align: center;
+    width: 290px;
+    margin:10px auto;
+  }
+  li{
+    height: 70px;
+    padding-right: 50px;
+    line-height: 24px;
+    padding-top: 15px;
+  }
+  #sponsors{
+    height: auto;
+  }
+  #sponsors img{
+    width: 30%;
+    display: block;
+    margin: 0 auto;
   }
 }
