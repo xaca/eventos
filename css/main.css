@@ -1,42 +1,53 @@
 
+      :root{
+        --color-primario:#DC2627;
+        --color-secundario:#080013;
+        --color-terciario:#375A5F;
+        --color-cuaternario:#F0FFFF;
+        --color-fondo:#2f2a2a;
+        --color-texto:#f9f2f2;
+        --color-pata:#252020;
+        --color-sombra:rgb(59, 4, 4);
+        --color-destacado:#ea5e8c;
+      }
       body {
         margin: 0;
         font-family: 'Montserrat', sans-serif;
-        color: #151521;
-        background-color: rgba(255, 251, 125,.1);
+        color: var(--color-texto);
+        background-color: var(--color-fondo);
       }
       ul {
         padding: 0;
       }
       h1,h2 {
         font-weight: 900;
-        color: #f77311;
+        color: var(--color-primario);
       }
       .mensaje_importante{
         font-weight: 400;
         font-size: 16px;
-        color:#8f5bcb;
+        color:var(--color-destacado);
       }
       section{
         padding: 20px;
         margin-bottom: 60px;
       }
-      li {
+      .item {
         list-style-type: none;
         font-weight: 400;
         height: 60px;
         line-height: 50px;
         padding-left: 10px;
       }
-      li:nth-child(even) {
-        background: #582296;
-        color: #fffb7d;
+      .item:nth-child(even) {
+        background: var(--color-secundario);
+        color: var(--color-primario);
       }
-      li:nth-child(odd) {
-        color: #582296;
-        background: #fffb7d;
+      .item:nth-child(odd) {
+        color: var(--color-secundario);
+        background:var(--color-primario);
       }
-      li span {
+      .item span {
         font-size: 18px;
         font-weight: 500;
       }
@@ -44,7 +55,7 @@
         font-weight: normal;
       }
       a {
-        color: #f77311;
+        color:var(--color-primario);
       }
       div {
         width: 100%;
@@ -58,19 +69,19 @@
       #btn_registro{
         display: block;
         text-decoration: none;
-        color: #fffb7d;
-        background: #582296;
+        color: var(--color-secundario);
+        background: var(--color-primario);
         padding: 12px 60px;
         width:50%;
         text-align: center;
         margin:0 auto;
         border: 1px solid;
         padding: 10px;
-        box-shadow: 5px 5px  #f77311;
+        box-shadow: 5px 5px  var(--color-sombra);
       }
       #btn_registro:hover{
-        background: #fffb7d;
-        color: #582296;
+        background: var(--color-secundario);
+        color: var(--color-primario);
       }
       #speakers section{
         display: flex;
@@ -78,17 +89,22 @@
       }
       .tarjeta_speaker{
         width: 200px;
-        border: 1px solid #8f5bcb;
+        border: 1px solid var(--color-secundario);
         border-radius: 10px;
         padding: 20px;
+      }
+      .tarjeta_speaker ul{
+        text-align: left;
+        font-size: 14px;
+        margin-left: 20px;
       }
       .nombre_tarjeta{
         font-weight: 600;
         font-size: 14px;
-        color: #f77311;
+        color:var(--color-primario);
       }
       .fecha{
-        color: #582296;
+        color: var(--color-secundario);
         font-weight: 600;
       }
       .descripcion{
@@ -97,7 +113,7 @@
         letter-spacing: -.5px;
       }
       .avatar{
-        border:1px solid #f67513;
+        border:1px solid var(--color-terciario);
         border-radius: 200px;
         background-size: cover;
         background-repeat: no-repeat;
@@ -119,20 +135,22 @@
       }
       #sponsors{
         width: 100%;
-        background-color: #f67513;
+        background-color: var(--color-pata);
         margin:0;
-        height: 120px;
+        height: auto;
         padding-bottom: 30px;
       }
       #sponsors h2{
         margin-left: 20px;
         padding-top:30px;
-        color:#fffb7d;
+        color:var(--color-primario);
       }
       .enlace_sponsor{
         margin-right: 10px;
+        text-decoration: none;
       }
-      @media (min-width: 421px) and (max-width:810px) {
+      /* Celuar Pro Max */
+      @media (min-width: 421px) and (max-width:500px) {
         .tarjeta_speaker{
           width: 160px;
           margin-right: 10px;
@@ -140,6 +158,9 @@
         .avatar{
           width: 150px;
           height: 150px;
+        }
+        .enlace_sponsor{
+          display: block;
         }
       }
       /*Celular*/
@@ -167,13 +188,17 @@
         .enlace_sponsor{
           height: 20%;
         }
-        #sponsors{
-          height: 110px;
-        }
+        
         #sponsors img{
           width: 100px;
         }
         .tarjeta_speaker{
           margin:10px auto;
+        }
+      }
+      /*Tablet*/
+      @media (min-width: 501px) and (max-width:810px) {
+        .enlace_sponsor{
+          width: 100%;
         }
       }
