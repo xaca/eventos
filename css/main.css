@@ -36,9 +36,9 @@
       .item {
         list-style-type: none;
         font-weight: 400;
-        height: 60px;
-        line-height: 50px;
-        padding-left: 10px;
+        height: auto;
+        line-height: 19px;
+        padding: 20px;
       }
       .item:nth-child(even) {
         background: var(--color-secundario);
