@@ -9,6 +9,7 @@
         --color-pata:#252020;
         --color-sombra:rgb(59, 4, 4);
         --color-destacado:#ea5e8c;
+        --color-fecha:rgb(198, 19, 19);
       }
       body {
         margin: 0;
@@ -73,6 +74,10 @@
         background: var(--color-primario);
         padding: 12px 60px;
         width:50%;
+        height: 50px;
+        line-height: 50px;
+        font-size: 24px;
+        border-radius: 10px;
         text-align: center;
         margin:0 auto;
         border: 1px solid;
@@ -104,7 +109,7 @@
         color:var(--color-primario);
       }
       .fecha{
-        color: var(--color-secundario);
+        color: var(--color-texto);
         font-weight: 600;
       }
       .descripcion{
