@@ -36,9 +36,14 @@
       .item {
         list-style-type: none;
         font-weight: 400;
-        height: 60px;
+        height: auto;
         line-height: 50px;
-        padding-left: 10px;
+        padding-left: 30px;
+      }
+      .item span:nth-child(2){
+        line-height: 23px; /* Titulo de la actividad */
+        margin-left: 20px;
+        display: block;
       }
       .item:nth-child(even) {
         background: var(--color-secundario);
@@ -64,8 +69,9 @@
       }
 
       div > img {
-        width: 100%;
+        width: 90%;
         max-width: 682px;
+        margin: 20px;
       }
       #btn_registro{
         display: block;
@@ -97,6 +103,7 @@
         border: 1px solid var(--color-secundario);
         border-radius: 10px;
         padding: 20px;
+        margin-right: 15px;
       }
       .tarjeta_speaker ul{
         text-align: left;
@@ -154,18 +161,35 @@
         margin-right: 10px;
         text-decoration: none;
       }
+      #agenda li:first-child{
+        border-radius: 20px 20px 0 0;
+      }
+      #agenda li:last-child{
+        border-radius: 0 0 20px 20px;
+      }
       /* Celuar Pro Max */
       @media (min-width: 421px) and (max-width:500px) {
         .tarjeta_speaker{
-          width: 160px;
-          margin-right: 10px;
+          width: 320px;
+          margin-bottom: 20px;
+          text-align: center;
+          margin: 10px auto;
+        }
+        .descripcion{
+          text-align: left;
         }
         .avatar{
+          margin: 0 auto;
           width: 150px;
           height: 150px;
+          margin-bottom: 20px;
         }
         .enlace_sponsor{
           display: block;
+        }
+        #speakers section{
+          display: flex;
+          flex-direction: column;
         }
       }
       /*Celular*/
@@ -185,7 +209,6 @@
         #speakers section{
           flex-direction: column;
           margin: 0 auto;
-          width: 80%;
         }
         .tarjeta_speaker{
           margin-bottom: 20px;
@@ -193,11 +216,14 @@
         .enlace_sponsor{
           height: 20%;
         }
-        
+        .avatar{
+          margin: 0 auto;
+        }
         #sponsors img{
           width: 100px;
         }
         .tarjeta_speaker{
+          width: 250px;
           margin:10px auto;
         }
       }
