@@ -66,6 +66,12 @@ section{
 a {
   color:var(--color-primario);
 }
+a.autor{
+  color:var(--color-fondo);
+  text-decoration: underline;
+  margin-top: 10px;
+  font-size: 16px;
+}
 div {
   width: 100%;
   text-align: center;
