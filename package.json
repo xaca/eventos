@@ -2,7 +2,6 @@
   "name": "eventos",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "local": "http-server -p 8080 -c-1"
   },
