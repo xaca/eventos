@@ -11,6 +11,9 @@
   --color-destacado:#870a6e;
   --color-fecha:#870a6e;
 }
+body,html{
+  overflow-x: hidden;
+}
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
