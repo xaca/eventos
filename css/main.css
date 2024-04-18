@@ -1,15 +1,15 @@
 
 :root{
-  --color-primario:#020659;
-  --color-secundario:#666DF2;
-  --color-terciario:#030BA6;
+  --color-primario:#664FA1;
+  --color-secundario:#FFD7E3;
+  --color-terciario:#a199b0;
   --color-cuaternario:#F0FFFF;
-  --color-fondo:#DCDDEA;
-  --color-texto:#040d2f;
-  --color-pata:#0f075f;
-  --color-sombra:#75797C;
-  --color-destacado:#870a6e;
-  --color-fecha:#870a6e;
+  --color-fondo:#E7DEF7;
+  --color-texto:#664FA1;
+  --color-pata:#160c34;
+  --color-sombra:#B59DF7;
+  --color-destacado:#290442;
+  --color-fecha:#1c0127;
 }
 body,html{
   overflow-x: hidden;
@@ -109,7 +109,7 @@ div > img {
 }
 .tarjeta_speaker{
   width: 200px;
-  border: 1px solid var(--color-secundario);
+  border: 1px solid var(--color-terciario);
   border-radius: 10px;
   padding: 20px;
   margin-right: 15px;
@@ -175,6 +175,9 @@ div > img {
 }
 #agenda li:last-child{
   border-radius: 0 0 20px 20px;
+}
+.lista_generica{
+  margin-left: 40px;
 }
 /* Celuar Pro Max */
 @media (min-width: 421px) and (max-width:500px) {
