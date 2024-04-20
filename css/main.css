@@ -1,15 +1,16 @@
 
 :root{
-  --color-primario:#664FA1;
-  --color-secundario:#FFD7E3;
-  --color-terciario:#a199b0;
-  --color-cuaternario:#F0FFFF;
-  --color-fondo:#E7DEF7;
-  --color-texto:#664FA1;
+  --color-primario:#26532b;
+  --color-secundario:#399e5a;
+  --color-terciario:#5abcb9;
+  --color-cuaternario:#63e2c6;
+  --color-fondo:#6ef9f5;
+  --color-texto:#26532b;
   --color-pata:#160c34;
-  --color-sombra:#B59DF7;
-  --color-destacado:#290442;
-  --color-fecha:#1c0127;
+  --color-sombra:#160c34;
+  --color-destacado:#160c34;
+  --color-fecha:#160c34;
+  --color-texto-boton:#d6ed91;
 }
 body,html{
   overflow-x: hidden;
@@ -53,7 +54,7 @@ section{
   color: var(--color-primario);
 }
 .item:nth-child(odd) {
-  color: var(--color-secundario);
+  color: var(--color-texto-boton);
   background:var(--color-primario);
 }
 .item span {
@@ -85,10 +86,10 @@ div > img {
 #btn_registro{
   display: block;
   text-decoration: none;
-  color: var(--color-secundario);
+  color: var(--color-texto-boton);
   background: var(--color-primario);
   padding: 12px 60px;
-  width:50%;
+  width:80%;
   height: 50px;
   line-height: 50px;
   font-size: 24px;
@@ -101,7 +102,7 @@ div > img {
 }
 #btn_registro:hover{
   background: var(--color-secundario);
-  color: var(--color-primario);
+  /*color: var(--color-primario);*/
 }
 #speakers section{
   display: flex;
@@ -243,5 +244,45 @@ div > img {
 @media (min-width: 501px) and (max-width:810px) {
   .enlace_sponsor{
     width: 100%;
+  }
+}
+/*Escritorio*/
+@media (min-width: 811px){
+  .avatar{
+  
+  }
+  .tarjeta_speaker{
+    width: 850px;
+    margin: 50px auto;
+  
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
+  }
+  #speakers section{
+    flex-direction: column;
+  }
+  .descripcion{
+    width: 300px;
+    margin-left: 20px;
+  }
+  .vertical_escritorio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .redes{
+    width: 100px;
+  }
+  .nombre_tarjeta{
+    font-size: 23px;
+    width: 130px;
+    text-align: left;
+    margin-left: 20px;
+  }
+  .egreso{
+    width: 120px;
   }
 }
