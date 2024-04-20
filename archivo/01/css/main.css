@@ -1,0 +1,84 @@
+
+      body {
+        margin: 0;
+        padding: 20px;
+        font-family: 'Montserrat', sans-serif;
+        color: #151521;
+      }
+      ul {
+        padding: 0;
+      }
+      h1 {
+        font-weight: 900;
+        color: #f77311;
+      }
+      .mensaje_importante{
+        font-weight: 500;
+        color:#582296;
+        text-decoration: underline;
+      }
+      li {
+        list-style-type: none;
+        font-weight: 400;
+        height: 60px;
+        line-height: 50px;
+        padding-left: 10px;
+      }
+      li:nth-child(even) {
+        background: #582296;
+        color: #fffb7d;
+      }
+      li:nth-child(odd) {
+        color: #582296;
+        background: #fffb7d;
+      }
+      li span {
+        font-size: 18px;
+        font-weight: 500;
+      }
+      .speaker {
+        font-weight: normal;
+      }
+      a {
+        color: #f77311;
+      }
+      div {
+        width: 100%;
+        text-align: center;
+      }
+
+      div > img {
+        width: 100%;
+        max-width: 682px;
+      }
+      #btn_registro{
+        display: block;
+        text-decoration: none;
+        color: #fffb7d;
+        background: #582296;
+        padding: 12px 60px;
+        width:50%;
+        text-align: center;
+        margin:0 auto;
+        border: 1px solid;
+        padding: 10px;
+        box-shadow: 5px 5px  #f77311;
+      }
+      #btn_registro:hover{
+        background: #fffb7d;
+        color: #582296;
+      }
+      @media screen and (max-width: 720px) {
+        li {
+          height: auto;
+          padding: 2px 10px;
+          line-height: 30px;
+        }
+        li > span {
+          display: block;
+        }
+        .speaker {
+          font-weight: 500;
+          display: block;
+        }
+      }

@@ -1,0 +1,258 @@
+:root {
+  --titulos: #BF1534;
+  --texto:#0F1015;
+  --resaltar:#1b8ca6;
+  --fondo: #D92332;
+  --texto-alternativo:#CCD0D9;
+  --enlace-principal:#D97EB0;
+  --enlace-secundario:#0F1015;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--texto);
+  background-color: rgba(27, 140, 166,.2);
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+h1,h2 {
+  font-weight: 900;
+  color: var(--titulos);
+}
+.mensaje_importante{
+  font-weight: 400;
+  font-size: 16px;
+  color:var(--resaltar);
+}
+section{
+  padding: 20px;
+  margin-bottom: 60px;
+}
+li {
+  list-style-type: none;
+  font-weight: 400;
+  height: 60px;
+  line-height: 50px;
+  padding-left: 10px;
+}
+li:nth-child(even) {
+  background: var(--resaltar);
+  color: var(--texto-alternativo);
+}
+li:nth-child(odd) {
+  background:var(--fondo);
+  color: var(--texto);
+}
+li span {
+  font-size: 18px;
+  font-weight: 500;
+}
+.speaker {
+  font-weight: normal;
+}
+a {
+  color:var(--enlace-principal);
+}
+div {
+  width: 100%;
+  text-align: center;
+}
+
+div > img {
+  width: 100%;
+  max-width: 682px;
+}
+#btn_registro{
+  display: block;
+  text-decoration: none;
+  border-radius: 20px;
+  color: var(--texto);
+  background: var(--fondo);
+  padding: 12px 60px;
+  width:50%;
+  text-align: center;
+  margin:0 auto;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 5px  var(--enlace-secundario);
+}
+#btn_registro:hover{
+  background:var(--resaltar);
+  color:var(--texto);
+}
+#speakers section{
+  display: flex;
+  justify-content: space-around;
+}
+.tarjeta_speaker{
+  width: 200px;
+  border: 1px solid var(--fondo);
+  border-radius: 10px;
+  padding: 20px;
+}
+.nombre_tarjeta{
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--titulos);
+}
+.fecha{
+  color: var(--resaltar);
+  font-weight: 600;
+}
+.descripcion{
+  text-align: left;
+  font-size: 14px;
+  letter-spacing: -.5px;
+}
+.avatar{
+  border:1px solid var(--resaltar);
+  border-radius: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+  margin:0 auto;
+  margin-bottom: 20px;
+}
+.speaker_1{
+  background-image: url(../img/01_speaker.jpg);
+}
+.speaker_2{
+  background-image: url(../img/02_speaker.jpg);
+}
+.speaker_3{
+  background-image: url(../img/03_speaker.jpg);
+}
+.enlace{
+  text-decoration: none;
+}
+#sponsors{
+  width: 100%;
+  color:var(--enlace-principal);
+  background-color: var(--enlace-secundario);
+  margin:0;
+  height: 132px;
+  padding-bottom: 30px;
+}
+#sponsors h2{
+  margin-left: 20px;
+  padding-top:30px;
+  color:var(--texto-alternativo);
+}
+.enlace_sponsor{
+  margin-right: 10px;
+  color:var(--resaltar);
+  text-decoration: none;
+}
+blockquote{
+  color:#0F1015;
+}
+blockquote h3{
+  font-weight: 400;
+}
+blockquote h4{
+  font-weight: 300;
+}
+.imagen_destacada{
+  border-radius: 100%;
+  width: 500px;
+  display: block;
+  margin: 0 auto;
+}
+.icono_redes{
+}
+#texto_tema_evento{
+  width: 70%;
+  margin: 0 auto;
+}
+#agenda div{
+  border-radius: 20px;
+  text-align: left;
+  overflow: hidden;
+}
+#agenda ul li:first-child{
+  padding-top: 15px;
+}
+@media (min-width: 421px) and (max-width:810px) {
+  .imagen_destacada{
+    width: 350px;
+  }
+  .tarjeta_speaker{
+    width: 160px;
+    margin-right: 10px;
+  }
+  .avatar{
+    width: 150px;
+    height: 150px;
+  }
+}
+
+
+/*Celular*/
+@media (min-width: 360px) and (max-width: 420px){
+
+  .imagen_destacada{
+    width: 250px;
+  }
+  li {
+    height: auto;
+    padding: 2px 10px;
+    line-height: 30px;
+  }
+  li > span {
+    display: block;
+  }
+  .speaker {
+    font-weight: 500;
+    display: block;
+  }
+  #speakers section{
+    flex-direction: column;
+    margin: 0 auto;
+    width: 80%;
+  }
+  .tarjeta_speaker{
+    margin-bottom: 20px;
+  }
+  .enlace_sponsor{
+    height: 20%;
+  }
+  #sponsors{
+    height: 140px;
+  }
+  #sponsors img{
+    width: 100px;
+  }
+  .tarjeta_speaker{
+    margin:10px auto;
+  }
+}
+
+/*Iphone pro max*/
+@media (min-width: 427px) and (max-width: 428px)  {
+  #speakers section {
+    flex-direction: column;
+  }
+  .tarjeta_speaker{
+    text-align: center;
+    width: 290px;
+    margin:10px auto;
+  }
+  li{
+    height: 70px;
+    padding-right: 50px;
+    line-height: 24px;
+    padding-top: 15px;
+  }
+  #sponsors{
+    height: auto;
+  }
+  #sponsors img{
+    width: 30%;
+    display: block;
+    margin: 0 auto;
+  }
+}
