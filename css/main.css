@@ -10,6 +10,7 @@
   --color-sombra:#160c34;
   --color-destacado:#160c34;
   --color-fecha:#160c34;
+  --color-texto-boton:#d6ed91;
 }
 body,html{
   overflow-x: hidden;
@@ -53,7 +54,7 @@ section{
   color: var(--color-primario);
 }
 .item:nth-child(odd) {
-  color: var(--color-secundario);
+  color: var(--color-texto-boton);
   background:var(--color-primario);
 }
 .item span {
@@ -85,10 +86,10 @@ div > img {
 #btn_registro{
   display: block;
   text-decoration: none;
-  color: var(--color-secundario);
+  color: var(--color-texto-boton);
   background: var(--color-primario);
   padding: 12px 60px;
-  width:50%;
+  width:80%;
   height: 50px;
   line-height: 50px;
   font-size: 24px;
@@ -101,7 +102,7 @@ div > img {
 }
 #btn_registro:hover{
   background: var(--color-secundario);
-  color: var(--color-primario);
+  /*color: var(--color-primario);*/
 }
 #speakers section{
   display: flex;
