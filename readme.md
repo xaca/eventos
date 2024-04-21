@@ -8,13 +8,13 @@ Repositorio informativo sobre los eventos de la comunidad Codign with friends de
 
 ◦•●❤♡ ¢hårlå§ ♡❤●•◦
 
-🎨 Gobierno de un Design System
-🧙‍♂️ Debugging tech interviews
+🎨 Gobierno de un Design System  
+🧙‍♂️ Debugging tech interviews  
 
-📍Lugar: Aula 327 bloque 10 Arquidiseño.
-🏫Dirección: UPB, campus Laureles.
-⏰Hora: 17:30 - 20:00
-🌐Website: https://xaca.github.io/eventos
+📍Lugar: Aula 327 bloque 10 Arquidiseño.  
+🏫Dirección: UPB, campus Laureles.  
+⏰Hora: 17:30 - 20:00.  
+🌐Website: https://xaca.github.io/eventos  
 
 ¡Te invitamos a un nuevo evento!
 Participa de un evento de tecnología con contenido interesante y de vanguardia.
