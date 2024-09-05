@@ -2,7 +2,7 @@
 :root{
   --color-primario:#F20544;
   --color-secundario:#d07890;
-  --color-terciario:#cab9bd;
+  --color-terciario:#fdf2f4;
   --color-cuaternario:#575052;
   --color-fondo:#B0C1D9;
   --color-texto:#0D0D0D;
@@ -232,6 +232,14 @@ div > img {
 }
 /*Celular*/
 @media (max-width: 420px)  {
+  .torneos{
+    width: 300px;
+    height: auto;
+    padding-bottom: 10px;
+  }
+  .anuncio{
+    width: 300px;
+  }
   li {
     height: auto;
     padding: 2px 10px;
@@ -269,6 +277,10 @@ div > img {
 @media (min-width: 501px) and (max-width:810px) {
   .enlace_sponsor{
     width: 100%;
+  }
+  .anuncio{
+    width: 700px;
+    margin: 0 auto;
   }
 }
 /*Escritorio*/
