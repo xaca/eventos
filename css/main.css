@@ -1,16 +1,16 @@
 
 :root{
-  --color-primario:#26532b;
-  --color-secundario:#399e5a;
-  --color-terciario:#5abcb9;
-  --color-cuaternario:#63e2c6;
-  --color-fondo:#6ef9f5;
-  --color-texto:#26532b;
-  --color-pata:#160c34;
+  --color-primario:#F20544;
+  --color-secundario:#d07890;
+  --color-terciario:#cab9bd;
+  --color-cuaternario:#575052;
+  --color-fondo:#B0C1D9;
+  --color-texto:#0D0D0D;
+  --color-pata:#1f2a38;
   --color-sombra:#160c34;
   --color-destacado:#160c34;
   --color-fecha:#160c34;
-  --color-texto-boton:#d6ed91;
+  --color-texto-boton:#F23D6D;
 }
 body,html{
   overflow-x: hidden;
@@ -24,9 +24,16 @@ body {
 ul {
   padding: 0;
 }
-h1,h2 {
-  font-weight: 900;
+h1,h2{
   color: var(--color-primario);
+}
+h1{
+  font-weight: 900;
+  font-size: 22px;
+}
+h2{
+  font-weight: 700;
+  font-size: 18px;
 }
 .mensaje_importante{
   font-weight: 400;
@@ -179,6 +186,24 @@ div > img {
 }
 .lista_generica{
   margin-left: 40px;
+}
+.torneos{
+  text-align: center;
+  margin:0 auto;
+  width: 800px;
+  height: 900px;
+  padding-bottom: 20px;
+}
+.torneos section{
+  display: inline-block;
+  border-radius:10px;
+  border:1px solid var(--color-terciario);
+  height: 320px;
+  vertical-align: top;
+}
+.anuncio{
+  text-align: left;
+  margin:30px;
 }
 /* Celuar Pro Max */
 @media (min-width: 421px) and (max-width:500px) {
