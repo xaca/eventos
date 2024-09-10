@@ -11,6 +11,7 @@
   --color-destacado:#160c34;
   --color-fecha:#160c34;
   --color-texto-boton:#F23D6D;
+  --color-fondo-destacado:#9cd4fd;
 }
 body,html{
   overflow-x: hidden;
@@ -204,6 +205,19 @@ div > img {
 .anuncio{
   text-align: left;
   margin:30px;
+}
+.destacado{
+  width: 70%;
+  margin:0 auto;
+  text-align: left;
+  margin-bottom: 60px;
+  background: var(--color-fondo-destacado);
+  border-radius: 10px;
+  padding: 40px;
+}
+.imagen_evento{
+  display: block;
+  margin: 0 auto;
 }
 /* Celuar Pro Max */
 @media (min-width: 421px) and (max-width:500px) {
