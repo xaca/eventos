@@ -220,6 +220,14 @@ div > img {
   display: block;
   margin: 0 auto;
 }
+.menu{
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  margin-bottom: 20px;
+  background: rgba(13, 9, 36, 0.84);
+  border-radius: 20px;
+}
 /* Celuar Pro Max */
 @media (min-width: 421px) and (max-width:500px) {
   .tarjeta_speaker{
