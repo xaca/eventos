@@ -194,6 +194,7 @@ div > img {
   width: 800px;
   height: 900px;
   padding-bottom: 20px;
+  display: none;
 }
 .torneos section{
   display: inline-block;
