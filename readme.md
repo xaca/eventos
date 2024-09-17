@@ -18,3 +18,7 @@ Repositorio informativo sobre los eventos de la comunidad Codign with friends de
 
 *¡Te invitamos a un nuevo evento!*
 Participa de un evento de tecnología con contenido interesante y de vanguardia.
+
+## Recursos
+
+- [https://codepen.io/xaca/pen/jbYEJL](Plantilla tabla de posiciones)
