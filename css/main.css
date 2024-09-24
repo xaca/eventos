@@ -1,17 +1,19 @@
 
 :root{
-  --color-primario:#F20544;
-  --color-secundario:#d07890;
-  --color-terciario:#fdf2f4;
-  --color-cuaternario:#575052;
+  --color-primario:#1C112E;
+  --color-secundario:#4FF2D9;
+  --color-terciario:#F7B7F2;
+  --color-cuaternario:#AA7FDB;
   --color-fondo:#B0C1D9;
-  --color-texto:#0D0D0D;
-  --color-pata:#1f2a38;
-  --color-sombra:#160c34;
+  --color-texto:#F7B7F2;
+  --color-enlaces_menu:#4FF2D9;
+  --color-enlaces_general:#160c34;
+  --color-pata:#160c34;
+  --color-sombra:#F7B7F2;
   --color-destacado:#160c34;
   --color-fecha:#160c34;
-  --color-texto-boton:#F23D6D;
-  --color-fondo-destacado:#9cd4fd;
+  --color-texto-boton:#4FF2D9;
+  --color-fondo-destacado:#190830;
 }
 body,html{
   overflow-x: hidden;
@@ -73,7 +75,7 @@ section{
   font-weight: normal;
 }
 a {
-  color:var(--color-primario);
+  color:var(--color-enlaces_general);
 }
 a.autor{
   color:var(--color-fondo);
@@ -227,6 +229,17 @@ div > img {
   margin-bottom: 20px;
   background: rgba(13, 9, 36, 0.84);
   border-radius: 20px;
+}
+.menu a{
+  color:var(--color-enlaces_menu);
+  text-decoration: none;
+}
+.menu a:hover{
+  text-decoration: underline;
+}
+#deportes{
+  background: var(--color-fondo);
+  color:var(--color-enlaces_general);
 }
 /* Celuar Pro Max */
 @media (min-width: 421px) and (max-width:500px) {
