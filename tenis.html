@@ -1,14 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tenis 🎾</title>
+    <title>·.★·.·´¯`·.·★ Torneo de Tenis de Campo ★·.·´¯`·.·★.·</title>
+    <meta name="description" content="Sección dedicada al torneo de tenis de campo en la Universidad Pontificia Bolivariana" />
+    <meta name="author" content="Xaca Rana">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://xaca.github.io/eventos" />
+    <meta property="og:title" content="Torneo de Tenis de Campo" />
+    <meta property="og:description" content="Sección de Tenis de Campo del torneo deportivo en la Universidad Pontificia Bolivariana" />
+    <meta property="og:image" content="https://xaca.github.io/img/logo.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://xaca.github.io/eventos" />
+    <meta property="twitter:title" content="Torneo de Tenis de Campo" />
+    <meta property="twitter:description" content="Sección de Tenis de Campo del torneo deportivo en la Universidad Pontificia Bolivariana" />
+    <meta property="twitter:image" content="https://xaca.github.io/img/logo.png" />
+
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,900&display=swap" rel="stylesheet"/>
 </head>
-<body>
-    <h1>
-        Torneo de tenis de campo
-    </h1>
+<body id="tenis">
+
+    <!-- Cambiar color de letra a negro para todo el texto en la página -->
+    <style>
+        /* Cambia el color de todo el texto a negro */
+        body {
+            color: black;
+        }
+
+        /* Ajusta las imágenes en fila con menor espacio entre ellas */
+        .grupo-imagenes, .galeria-fotos {
+            display: flex;
+            justify-content: center; /* Centra las imágenes */
+            gap: 10px; /* Ajusta el espacio entre las imágenes */
+            flex-wrap: wrap; /* Permite que las imágenes se distribuyan en varias filas si es necesario */
+        }
     
+        /* Ajusta el tamaño de las imágenes */
+        .grupo-imagenes img, .galeria-fotos img {
+            max-width: 45%; /* Reduce el tamaño de las imágenes si es necesario */
+            height: auto;
+            margin: 0; /* Elimina cualquier margen adicional */
+        }
+    
+        /* Márgenes uniformes entre imágenes */
+        .grupo-imagenes img, .galeria-fotos img {
+            margin: 5px; /* Ajusta este valor según la distancia que desees entre las imágenes */
+        }
+    
+        /* Para los patrocinadores */
+        footer #sponsors div {
+            display: flex;
+            justify-content: center;
+            gap: 10px; /* Menor separación entre los logos */
+            align-items: center;
+        }
+    
+        footer #sponsors img {
+            max-width: 150px;
+            height: auto;
+            margin: 5px; /* Misma margen para los logos de los patrocinadores */
+        }
+    </style>
+    
+    <div class="header">
+        <img src="img/logo.png" alt="Torneo de Tenis de Campo" />
+    </div>
+    <nav class="menu">
+        <a href="index.html">Inicio</a>
+        <a href="deportes.html">Torneo Deportivo</a>
+        <a href="tenis.html">Tenis de Campo</a>
+        <a href="#programacion">Programación de Partidos</a>
+        <a href="#fotos">Fotos de los Encuentros</a>
+    </nav>
+
+    <div class="anuncio">
+        <h1><b>🎾 ¡Bienvenidos al Torneo de Tenis de Campo! 🎾</b></h1>
+        <b>
+            Aquí podrás encontrar toda la información sobre el torneo, desde los grupos de la primera ronda hasta las fechas y horarios de los partidos. ¡No te lo pierdas!
+        </b>
+        <div class="grupos">
+            <h2><b>Grupos de la Primera Ronda</b></h2>
+            <div class="grupo-imagenes">
+                <img src="img/Grupos_1.png" alt="Grupo A" />
+                <img src="img/Grupos_2.png" alt="Grupo B" />
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de programación de partidos -->
+    <section id="programacion">
+        <h2><b>📅 Programación de Partidos</b></h2>
+        <p>Aquí podrás ver la programación completa de los partidos del torneo de tenis de campo.</p>
+        <ul>
+            <li><strong>Santiago Mendoza vs. Luis Felipe Ospina</strong> - Octubre 10 - 8am</li>
+
+        </ul>
+    </section>
+
+    <section id="resultados">
+        <h2><b>📸 Resultados de los Encuentros</b></h2>
+    </section>
+
+    <!-- Sección de fotos -->
+    <section id="fotos">
+        <h2><b>📸 Fotos de los Encuentros</b></h2>
+        <p>Revive los mejores momentos del torneo con nuestras fotos exclusivas de los encuentros.</p>
+    </section>
+
+    <footer id="sponsors">
+        <h2><b>Con el apoyo de</b></h2>
+        <div>
+            <a class="enlace_sponsor" href="https://www.pragma.com.co/es/" target="_blank">
+                <img src="img/pragma.png" alt="Pragma" />
+            </a>
+            <a class="enlace_sponsor" href="https://www.upb.edu.co" target="_blank">
+                <img src="img/logo_upb.png" alt="UPB" />
+            </a>
+            <a class="enlace_sponsor autor" href="http://www.xacarana.com" target="_blank">
+                Diseño: xacarana
+            </a>
+        </div>
+    </footer>
 </body>
 </html>
