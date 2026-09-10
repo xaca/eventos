@@ -3,7 +3,6 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import Router from './components/ui/Menu/Router.jsx'
 import { ThemeProvider } from './components/ui/Theme/ThemeProvider'
-import MainLayout from './components/ui/MainLayout/MainLayout'
 // Render the main Router inside StrictMode for development checks
 createRoot(document.getElementById('root')).render(
   <StrictMode>

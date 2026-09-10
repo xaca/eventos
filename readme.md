@@ -32,21 +32,18 @@ En esta charla/demo compartiré cómo he estado usando Cursor como entorno princ
 ## Salidas a cine
 
 (◕‿◕) ℂ𝕠𝕕𝕚𝕟𝕘 𝕨𝕚𝕥𝕙 𝕗𝕣𝕚𝕖𝕟𝕕𝕤 (•◡•)
+📽️ Película de la semana 🎉🍿🤖
 
-📽️ Película de la semana 🎉🍿
+Te invitamos a un nuevo evento de Coding with Friends. En esta oportunidad nos reuniremos para disfrutar del gran reestreno de un clásico de la ciencia ficción y la acción: Terminator 2: El juicio final 🎬💥🕶️
 
-Te invitamos a un nuevo evento de Coding with friends, en está oportunidad vamos a ver el estreno de la película "Kill Bill: The Whole Bloody Affair
-Kill Bill"
-
-🎬 ¡No te lo pierdas!
-¡Cordialmente invitados!
-
-🗓️ Fecha: 18 de febrero 
-⏰ Hora: 6:30 PM (Duración 4h 35 m)
+🎬 ¡No te lo pierdas! ¡Todos cordialmente invitados!
+🗓️ Fecha: Martes 2 de septiembre de 2026
+⏰ Hora: 6:20 p.m. (Nos encontramos en el hall a las 5:50 p.m.)
+📍 Lugar: Cinermark, Centro Comercial Arkadia
+🎟️ Valor boleta: $10.100 (General)
 🌐 Website: https://codingwithfriends.club/#/cine
-📍 Lugar: Cinecolombia Centro Comercial Unicentro
 
-ℹ️ En el sitio web está toda la información para reservar tu entrada.
+ℹ️ En nuestro sitio web encontrarás el formulario para reservar tu entrada y todos los detalles del evento. ¡Nos vemos allá! 🤖🎟️🚀
 
 ## Cursos Sapiencia - Programa ESTUD-IA
 
