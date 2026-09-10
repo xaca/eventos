@@ -11,8 +11,8 @@ function Menu() {
             {/*<NavLink to="/charlas">Charlas</NavLink>*/}
             <NavLink to="/eventos">Eventos</NavLink>
             <NavLink to="/online-events">Online</NavLink>
-            <NavLink to="/cine">Cine</NavLink>
-            <NavLink to="/frases-motivacionales">Frases Motivacionales</NavLink>
+            {/*<NavLink to="/cine">Cine</NavLink>*/}
+            {/*<NavLink to="/frases-motivacionales">Frases Motivacionales</NavLink>*/}
             <button className="theme-toggle" aria-label="Toggle dark mode" onClick={toggleTheme}>
                 {isDark ? "Light" : "Dark"}
             </button>
