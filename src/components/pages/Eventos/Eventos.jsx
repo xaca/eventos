@@ -1,4 +1,6 @@
-// Datos de las charlas y eventos UPB / Pragma
+import MainLayout from '../../ui/MainLayout/MainLayout';
+import './Eventos.scss';
+
 const events = [
     {
         id: 1,
@@ -6,7 +8,6 @@ const events = [
         title: 'Prepárate para conseguir el trabajo que sueñas',
         speaker: 'Luisa Fernanda Chica',
         role: 'Directora de crecimiento',
-        dateLabel: 'FECHA Y HORA',
         dateValue: 'Jueves 10 Sept, 2026',
         timeValue: '5:00 PM – 6:00 PM',
         type: 'online',
@@ -19,7 +20,6 @@ const events = [
         title: 'App móviles: arquitecturas modernas',
         speaker: 'Darry Morales',
         role: 'Arquitecto de soluciones Mobile',
-        dateLabel: 'FECHA Y HORA',
         dateValue: 'Martes 15 Sept, 2026',
         timeValue: '5:00 PM – 6:00 PM',
         type: 'online',
@@ -32,12 +32,11 @@ const events = [
         title: 'Visita estudiantes UPB a Pragma',
         speaker: 'Sede Pragma - Edificio SELF',
         role: 'Carrera 42 # 5 sur 47, piso 16, Medellín',
-        dateLabel: 'FECHA Y HORA',
         dateValue: 'Jueves 17 Sept, 2026',
         timeValue: '10:00 AM – 12:00 PM',
         type: 'presencial',
-        link: '#',
-        buttonText: 'Ver detalles'
+        link: null,
+        buttonText: null
     },
     {
         id: 4,
@@ -45,7 +44,6 @@ const events = [
         title: 'Monitoreo y Observabilidad',
         speaker: 'Walter Armando Llano Suárez',
         role: 'Arquitecto CloudOps',
-        dateLabel: 'FECHA Y HORA',
         dateValue: 'Martes 22 Sept, 2026',
         timeValue: '5:00 PM – 6:00 PM',
         type: 'online',
@@ -58,7 +56,6 @@ const events = [
         title: 'Bases UX/UI para desarrolladores',
         speaker: 'Andrés Sucerquia',
         role: 'Analista profesional',
-        dateLabel: 'FECHA Y HORA',
         dateValue: 'Martes 6 Oct, 2026',
         timeValue: '5:00 PM – 6:00 PM',
         type: 'online',
@@ -71,7 +68,6 @@ const events = [
         title: 'Diseñando experiencias centradas en el usuario',
         speaker: 'Andrea Rojo',
         role: 'Analista profesional',
-        dateLabel: 'FECHA Y HORA',
         dateValue: 'Jueves 15 Oct, 2026',
         timeValue: '5:00 PM – 6:00 PM',
         type: 'online',
@@ -82,77 +78,68 @@ const events = [
 
 export default function Eventos() {
     return (
-        <div className="min-h-screen bg-[#ff7e67] p-4 sm:p-6 lg:p-10 font-sans flex flex-col items-center">
-            <div className="w-full max-w-6xl space-y-4">
-                {events.map((event) => (
-                    <div
-                        key={event.id}
-                        className="bg-[#fffde8] rounded-2xl p-5 sm:p-6 border border-black/10 shadow-sm hover:shadow-md transition-all duration-200"
-                    >
-                        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+        <MainLayout>
+            <div className="eventos">
+                <h1>Eventos 📅</h1>
+                <div className="eventos__lista">
+                    {events.map((event) => (
+                        <div key={event.id} className="eventos__card">
+                            <div className="eventos__grid">
 
-                            {/* Sección Izquierda: Tipo, Título y Facilitador (Alineado estrictamente a la izquierda) */}
-                            <div className="lg:col-span-6 text-left flex flex-col items-start">
-                                <span className="text-[11px] font-extrabold tracking-wider text-neutral-600 uppercase block mb-1 text-left">
-                                    {event.tag}
-                                </span>
+                                {/* Left: tag, title, speaker */}
+                                <div className="eventos__info">
+                                    <span className="eventos__tag">{event.tag}</span>
+                                    <h2 className="eventos__title">{event.title}</h2>
+                                    <p className="eventos__speaker">
+                                        {event.type === 'online' && (
+                                            <span>Facilitador: </span>
+                                        )}
+                                        <strong>{event.speaker}</strong>
+                                        {event.role && (
+                                            <span> &mdash; {event.role}</span>
+                                        )}
+                                    </p>
+                                </div>
 
-                                <h3 className="text-xl sm:text-2xl font-black text-black leading-tight text-left mb-2">
-                                    {event.title}
-                                </h3>
+                                {/* Center: date */}
+                                <div className="eventos__fecha">
+                                    <span className="eventos__fecha-label">Fecha y Hora</span>
+                                    <span className="eventos__fecha-valor">{event.dateValue}</span>
+                                    <span className="eventos__hora">{event.timeValue}</span>
+                                </div>
 
-                                <div className="text-sm flex items-start justify-start text-neutral-800 text-left w-full">
-                                    {event.type === 'online' && <span className="text-neutral-500 font-medium">Facilitador: </span>}
-                                    <span className="font-bold text-black">{event.speaker}</span>
-                                    {event.role && (
-                                        <span className="text-neutral-600"> &nbsp;— {event.role}</span>
+                                {/* Right: CTA */}
+                                <div className="eventos__accion">
+                                    {event.type === 'online' && event.link && (
+                                        <a
+                                            href={event.link}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="eventos__btn"
+                                        >
+                                            {event.buttonText}
+                                            <svg
+                                                fill="none"
+                                                stroke="currentColor"
+                                                strokeWidth="2.5"
+                                                viewBox="0 0 24 24"
+                                                aria-hidden="true"
+                                            >
+                                                <path
+                                                    strokeLinecap="round"
+                                                    strokeLinejoin="round"
+                                                    d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                                                />
+                                            </svg>
+                                        </a>
                                     )}
                                 </div>
-                            </div>
 
-                            {/* Sección Central: Fecha y Hora */}
-                            <div className="lg:col-span-3 flex flex-col justify-center items-start lg:items-center bg-black/5 lg:bg-transparent p-3 lg:p-0 rounded-xl">
-                                <span className="text-[10px] font-extrabold uppercase tracking-widest text-neutral-600 mb-0.5">
-                                    FECHA Y HORA
-                                </span>
-                                <span className="text-base sm:text-lg font-black text-black">
-                                    {event.dateValue}
-                                </span>
-                                <span className="text-xs font-bold text-neutral-700">
-                                    {event.timeValue}
-                                </span>
                             </div>
-
-                            {/* Sección Derecha: Botón condicional (mantiene estructura de 3 columnas) */}
-                            <div className="lg:col-span-3 flex justify-start lg:justify-end items-center shrink-0 min-h-[48px]">
-                                {event.type === 'online' && event.link ? (
-                                    <a
-                                        href={event.link}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-neutral-900 hover:bg-black text-white text-sm font-bold py-3 px-6 rounded-full transition-all duration-200 active:scale-95 shadow-md"
-                                    >
-                                        <span className="text-white font-bold tracking-wide">{event.buttonText}</span>
-                                        <svg
-                                            className="w-4 h-4 stroke-[2.5] stroke-white text-white"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            viewBox="0 0 24 24"
-                                        >
-                                            <path
-                                                strokeLinecap="round"
-                                                strokeLinejoin="round"
-                                                d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
-                                            />
-                                        </svg>
-                                    </a>
-                                ) : null}
-                            </div>
-
                         </div>
-                    </div>
-                ))}
+                    ))}
+                </div>
             </div>
-        </div>
+        </MainLayout>
     );
 }
