@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "titulo": "Taller de Tailwind CSS v4",
+        "descripcion": "Aprende las novedades y mejores prácticas para dominar Tailwind CSS v4 en tus proyectos web.",
+        "tipo": "online",
+        "fecha": "15 de Octubre, 2026",
+        "hora": "18:00 hrs",
+        "imagen": "https://via.placeholder.com/200x200",
+        "enlace": "https://ejemplo.com/registro-tailwind"
+    },
+    {
+        "id": 2,
+        "titulo": "Meetup de Desarrolladores",
+        "descripcion": "Encuentro presencial para compartir experiencias, hacer networking y discutir sobre el futuro del software.",
+        "tipo": "presencial",
+        "fecha": "22 de Octubre, 2026",
+        "hora": "19:30 hrs",
+        "imagen": "https://via.placeholder.com/200x200",
+        "enlace": "https://ejemplo.com/meetup-devs"
+    },
+    {
+        "id": 3,
+        "titulo": "Meetup de Desarrolladores",
+        "descripcion": "Encuentro presencial para compartir experiencias, hacer networking y discutir sobre el futuro del software.",
+        "tipo": "presencial",
+        "fecha": "22 de Octubre, 2026",
+        "hora": "19:30 hrs",
+        "imagen": "https://via.placeholder.com/200x200",
+        "enlace": "https://ejemplo.com/meetup-devs"
+    }
+]
