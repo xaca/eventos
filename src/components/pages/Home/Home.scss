@@ -1,10 +1,11 @@
-#home{
-    background-color: var(--color-home);
+#home {
+    /*background-color: var(--color-home);*/
     transition: var(--transition-theme);
     min-height: 100vh;
     padding: 20px 0;
 }
 
+/*
 // Modo oscuro: cambiar el contenedor verde grande a oscuro
 [data-theme="dark"] #home {
     background-color: var(--color-fondo) !important;
@@ -13,4 +14,4 @@
 // Asegurar que el body también cambie en modo oscuro
 [data-theme="dark"] body {
     background-color: var(--color-fondo) !important;
-}
+}*/
